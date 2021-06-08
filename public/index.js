@@ -20,3 +20,7 @@ sio.on('mult', (data, cb) => {
     cb(result);
     
 });
+
+sio.on('client_count', (count ) => {
+    console.log('There are ' + count + ' connected clients.');
+});
